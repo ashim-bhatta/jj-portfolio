@@ -1,9 +1,11 @@
 import React from 'react';
+import './index.scss'
+import Nav from './component/Nav/Nav';
 
 function App() {
   return (
     <div className="App">
-      this is demo
+      <Nav />
     </div>
   );
 }
