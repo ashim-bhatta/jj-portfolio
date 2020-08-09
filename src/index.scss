@@ -27,3 +27,100 @@ h2{
     display: flex;
     justify-content: center;
 }
+
+.hamburger{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 100;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+    .list{
+        width: 32px;
+        height: 2px;
+        margin-bottom: 9px;
+        background-color: #00d9ff;
+        border-radius: 20px;
+        transition: 500ms;
+    }
+    .circle{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid #00d9ff;
+        transform: scale(0);
+        transition: 400ms;
+    }
+
+    .open.list{
+        margin-bottom: 0;
+        position: absolute;
+    }
+    .open.list-1{
+        animation-name: line1;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
+        animation-delay: 400ms;
+    }
+    .open.list-3{
+        animation-name: line3;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
+        animation-delay: 400ms;
+    }
+    .open.list-2{
+        animation-name: line2;
+        animation-duration: 0ms;
+        animation-fill-mode: forwards;
+        animation-delay: 400ms;
+    }
+    .open.circle{
+        transform: scale(1);
+
+    }
+
+
+}
+
+@keyframes line1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(45deg);
+    }
+  }
+
+  @keyframes line3 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-45deg);
+    }
+  }
+  @keyframes line2 {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0);
+    }
+  }
+
+
+  @media only screen and (max-width: 800px) {
+      .open.circle{
+          width: 50px;
+          height: 50px;
+
+      }
+  }

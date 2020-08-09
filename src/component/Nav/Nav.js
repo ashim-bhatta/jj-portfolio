@@ -3,43 +3,36 @@ import profile from '../../img/profile.jpg'
 import './nav.scss';
 
 
-const Nav = ( ) =>{
+const Nav = ( {isNavOpen} ) =>{
     const navMenu = [
         'home',
         'about',
         'work',
         'contact'
     ]
-    return(
-        <nav>
-            <div className="profile">
-                <img src={profile} alt="profile"/>
-            </div>
 
-            <div className="name">
-               <a href='#header'> <h1> Jedidiah <span>John</span> </h1></a>
-            </div>
-            <div className="menu">
-                <ul className="menu-item">
+    return(
+        <div className={isNavOpen==true ? 'nav open': 'nav'}>
+           <div className="menu">
+               <ul className="menu-list">
                     {
                         navMenu.map((menu) => {
-                            const href = '#'+menu
+                            const href = "#"+menu
                             return(
-                                
-                                <li className="menu-item-list">
-                        
-                                    <a href={href}>
-                                        {menu}
-                                    </a>
-                                    <div className="bg"></div>
-                                </li>
+                                <a href={href}>
+                                    <li className="menu-list-item">
+                                        <a href={href}>
+                                            {menu}
+                                        </a>
+                                        <div className="bg"></div>
+                                    </li>
+                                </a>
                             )
                         })
                     }
-                   
-                </ul>
-            </div>
-        </nav>
+               </ul>
+           </div>
+        </div>
     )
 }
 
