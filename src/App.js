@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './index.scss'
+
 import Nav from './component/Nav/Nav';
+import Header from './component/Header/Header';
+
 
 function App() {
   const [ isNavOpen, setIsNavOpen ] = useState(false)
@@ -14,6 +17,8 @@ function App() {
         <div className={ isNavOpen?' circle open' : 'circle'}></div>
       </div>
       <Nav isNavOpen = {isNavOpen}/>
+      <Header />
+      
     </div>
   );
 }

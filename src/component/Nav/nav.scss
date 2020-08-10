@@ -6,7 +6,8 @@ $sec-color : rgb(185, 176, 176);
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    min-height: 100vh;
+    z-index: 100;
     background: rgba(20, 23, 39, 0.945);
     display: flex;
     justify-content: center;
@@ -79,7 +80,14 @@ $sec-color : rgb(185, 176, 176);
                 }
 
                 &:hover .bg{
+                    transform: scaleX(0.5);
+
+                }
+
+                &:active .bg{
                     transform: scaleX(1);
+                    transition: 200ms;
+
 
                 }
             }
@@ -94,6 +102,15 @@ $sec-color : rgb(185, 176, 176);
         .menu-list{
             flex-direction: column;
         }
+    }
+  }
+
+
+
+  @media only screen and (max-height: 400px) {
+    .nav{
+        overflow-y: scroll;
+
     }
   }
 
