@@ -1,48 +1,40 @@
-import React, { useState, useEffect } from 'react';
+import React  from 'react';
 import './header.scss';
 
 import bg from '../../video/bg.mp4'
 import profile1 from '../../img/profile-1.png'
 
 
+// icon
+import { FiInstagram, FiTwitter, FiGithub, FiLinkedin } from 'react-icons/fi';
+
+
 const Header = ( ) => {
  
-    // // list of greading to display 
-    // const greading = ['hello','hi','hola','grasics']
-
-    // // current text displayed in screen
-    // const [ currentText, setCurrentText ] = useState()
-
-    // // choosing text
-    // var [ te, setTe ] = useState(0)
-
-    // // choosing string from text
-    // var [ po, setPo ] = useState(0)
-
-    // // typewriting effect
-    // const changeText = ( ) => {
-    //     // starting text from start if it pass the limit
-    //     if (greading.length == te ){
-    //         setTe(te = 0)
-    //     }
-    //     // starting next text if previous text displayed
-    //     if (greading[te].length <= po -1){
-    //        setPo(po = 0)
-    //        setTe(te + 1)
-    //     }
-        
-    //     setCurrentText(greading[te].substring(0, po))
-    //     setPo( po + 1)
-    // }
-
-    // // running function in every 500ms
-    // useEffect(() => {
-    //     const timer = setTimeout(() =>changeText(), 500);
-    //     return () => clearTimeout(timer);
-    //   }, [po]);
-
+    const social = [
+        {
+            icon : FiInstagram,
+            url : 'http://instaram.com/ashim_bhatta',
+            class : 'icon-insta'
+        },
+        {
+            icon : FiTwitter,
+            url : 'http://instaram.com/ashim_bhatta',
+            class : 'icon-twitter'
+        },
+        {
+            icon : FiGithub,
+            url : 'http://instaram.com/ashim_bhatta',
+            class : 'icon-git'
+        },
+        {
+            icon : FiLinkedin,
+            url : 'http://instaram.com/ashim_bhatta',
+            class : 'icon-linkedin'
+        },
+    ]
     return(
-        <header>
+        <header id="home">
             <video autoPlay muted loop id="myVideo">
                 <source src={bg} type="video/mp4" />
                 Your browser does not support HTML5 video.
@@ -51,22 +43,35 @@ const Header = ( ) => {
                     <a  href='#header'> <h1>  a</h1></a>
                 </div>
            <div className="content">
-                {/* <div className="greeting">
-                    <h2 className="typing">{currentText}<span>| MY LIFE IN </span>MY WAY</h2>
-                </div> */}
+                
+                <div className={{position : 'relative'}}>
+                    <div className="profile">
+                        <img src={profile1} alt="profile "/>
+                    </div>
+                    <div className="text">
+                        <h1>
+                            Ashim Bhatta
+                        </h1>
+                        <p>
+                            A creative Freelancer & Front End Developer
+                        </p>
 
-                <div className="profile">
-                    <img src={profile1} alt="profile "/>
-                </div>
-                <div className="text">
-                    <h1>
-                        Ashim Bhatta
-                    </h1>
-                    <p>
-                        A creative Freelancer & Front End Developer
-                    </p>
+                        <a href="#about" ><button className='btn'> About Me</button></a>
+                    </div>
 
-                    <button className='btn'>About Me</button>
+                    <div className="social-handel">
+                        {
+                            social.map((ic) => {
+                                return(
+                                    <div className='single-social' key={ic.class}>
+                                        <a href={ic.url} target="_blank">
+                                            <ic.icon className='icon'/>
+                                        </a>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
            </div>
         </header>

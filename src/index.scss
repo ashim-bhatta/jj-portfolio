@@ -6,10 +6,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+  scroll-behavior: smooth;
+
 }
 body{
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  overflow: hidden;
 
 
 }
@@ -24,6 +28,10 @@ li{
   padding: 12px 40px;
   border-radius: 50px;
   border: none;
+  // border: 1px solid white;
+    background-color: transparent;
+    color: white;
+
 }
 
 

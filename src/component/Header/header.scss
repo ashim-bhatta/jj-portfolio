@@ -21,6 +21,7 @@ header{
     .logo{
         background-clip: text;
         padding: 5px 15px;
+        position: fixed;
 
         a{
             font-weight: 700;
@@ -36,17 +37,26 @@ header{
     }
     .content{
         position: absolute;
+        width: 90%;
+        max-width: 400px;
+        height: 380px;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -40%);
+        transform: translate(-50%, -30%);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background: rgba(37, 42, 46, 0.842);
+        border-radius: 10px;
 
         .profile{
-            width: 200px;
-            height: 200px;
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50% ,50%);
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             overflow: hidden;
             display: flex;
@@ -60,19 +70,19 @@ header{
                 width: 90%;
                 height: 90%;
                 border-radius: 50%;
-                filter: grayscale(100%) blur(0.6px);
+                filter: grayscale(100%);
                 transition: 300ms;
                 background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             }
 
                 
             &:hover img{
-            filter: grayscale(100%) blur(0px);
-            width: 80%;
-            height: 80%;
+                filter: grayscale(100%);
+                width: 85%;
+                height: 85%;
             }
             &:active img{
-                filter: grayscale(100%) blur(3px);
+                filter: grayscale(100%);
                 width: 100%;
                 height: 100%;
                 box-shadow: 0px 0px 20px black;
@@ -87,13 +97,13 @@ header{
         .text{
             width: 100%;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 50px;
             // padding: 10px;
 
             h1{
                 font-size: 32px;
                 font-weight: 700;
-                color: rgb(255, 52, 52);
+                color: rgb(255, 255, 255);
             }
             p{
                 margin-top: 10px;
@@ -105,6 +115,73 @@ header{
                 cursor: pointer;
                 outline: none;
                 margin-top: 30px;
+                position: relative;
+                overflow: hidden;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgb(255, 52, 52);
+                    z-index: -10;
+                    transform: scaleX(0);
+                    transition: 600ms;
+                    transform-origin: right;
+
+                }
+
+                &:hover{
+                    border: 2px solid rgb(253, 252, 252);
+                }
+
+                &:hover::after{
+                    transform: scaleX(1);
+                    transform-origin: left;
+
+                }
+            }
+        }
+        .social-handel{
+            width: 100%;
+            max-width: 240px;
+            display: flex;
+            margin-top: 30px;
+            // background-color: #fff;
+            justify-content: space-between;
+            align-items: center;
+
+            .single-social{
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                cursor: pointer;
+
+                a{
+                    width: 45px;
+                    height: 45px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: 1px solid white;
+
+
+
+                    .icon{
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        
+                    }
+
+                    &:hover{
+                        background: rgb(255, 52, 52);
+                        border: none;
+                    }
+                }
             }
         }
     }
@@ -123,7 +200,28 @@ header{
             }
         }
         .content{
-            top: 45%;
+            width: 90%;
+            max-width: 400px;
+            height: 450px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+
+            & > div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .profile{
+                top: -50%;
+                left: 50%;
+                transform: translate(-50% ,40%);
+                width: 250px;
+                height: 250px;
+                
+            }
     
             .text{
     

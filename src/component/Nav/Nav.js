@@ -3,7 +3,7 @@ import profile from '../../img/profile.jpg'
 import './nav.scss';
 
 
-const Nav = ( {isNavOpen} ) =>{
+const Nav = ( {isNavOpen, toogleNav} ) =>{
     const navMenu = [
         'home',
         'about',
@@ -19,8 +19,8 @@ const Nav = ( {isNavOpen} ) =>{
                         navMenu.map((menu) => {
                             const href = "#"+menu
                             return(
-                                <a href={href}>
-                                    <li className="menu-list-item">
+                                <a href={href} >
+                                    <li className="menu-list-item" onClick={toogleNav}>
                                         <a href={href}>
                                             {menu}
                                         </a>
