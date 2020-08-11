@@ -20,7 +20,11 @@ a{
 li{
     list-style: none;
 }
-
+.btn{
+  padding: 12px 40px;
+  border-radius: 50px;
+  border: none;
+}
 
 
 %flex{
@@ -30,7 +34,7 @@ li{
 
 .hamburger{
     position: fixed;
-    right: 30px;
+    right: 100px;
     top: 30px;
     z-index: 110;
     cursor: pointer;
