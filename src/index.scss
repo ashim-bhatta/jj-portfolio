@@ -13,7 +13,7 @@ body{
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
-  overflow: hidden;
+  // overflow: hidden;
 
 
 }
@@ -28,10 +28,40 @@ li{
   padding: 12px 40px;
   border-radius: 50px;
   border: none;
-  // border: 1px solid white;
-    background-color: transparent;
-    color: white;
+  background-color: transparent;
+  color: white;
 
+}
+
+.title h1{
+  color: white;
+  font-size: 34px;
+  position: relative;
+  display: inline-block;
+
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: -0px;
+    left: 25px;
+    right: 25px;
+    height: 1px;
+    display: inline-block;
+    background: #38f9d7;
+
+  }
+
+  &::before{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 45px;
+    right: 45px;
+    height: 1px;
+    display: inline-block;
+    background: #38f9d7;
+
+  }
 }
 
 

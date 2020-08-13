@@ -1,0 +1,203 @@
+.about{
+    padding: 60px 15px;
+    text-align: center;
+    background: rgba(37, 42, 46, 1);
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .content{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: justify;
+            letter-spacing: 1px;
+
+        }
+
+        .about-me{
+            width: 100%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+
+            h3{
+                font-size: 14PX;
+                margin-bottom: 10PX;
+
+               span{
+                   margin-right: 40px;
+               }
+            }
+            .my-interest > div{
+                display: grid;
+                width: 70%;
+                min-width: 300px;
+                grid-template-columns:repeat(auto-fill, minmax(130px, 1fr));
+                grid-gap: 10px;
+
+                .interest{
+                    width: 100px;
+                    height: 100px;
+                    background: rgba(37, 42, 46, 1);
+                    box-shadow: 1px 1px 10px rgba(12, 12, 12, 0.575);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    padding: 15px;
+                    transition: 300ms;
+
+                    .icon-interest{
+                        fill: #38f9d7;
+                        font-size: 24px;
+
+                    }
+
+                    p{
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                    }
+                    &:hover{
+                        background: #38f9d7;
+
+                    .icon-interest{
+                        fill: white;
+                    }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    h2{
+        font-size: 26px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    span{
+        color: #38f9d7;
+    }
+    .btn-cv{
+        width: 150px;
+        height: 45px;
+        border: 2px solid rgb(255, 52, 52);
+        border-radius: 50px;
+        background-color: transparent;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        margin-top: 50px;
+        cursor: pointer;
+        z-index: 1000;
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgb(255, 52, 52);
+            z-index: -10;
+            transform: scaleX(0);
+            transition: 600ms;
+            transform-origin: right;
+            z-index: -1;
+
+        }
+
+        &:hover{
+            border: 2px solid rgb(253, 252, 252);
+        }
+
+        &:hover::after{
+            transform: scaleX(1);
+            transform-origin: left;
+
+        }
+    }
+        
+}
+
+@media only screen and (min-width: 800px) {
+    .about{
+        padding: 80px 100px;
+
+
+        .content{
+            margin-top: 50px;
+            padding: 0 30px;
+    
+            p{
+                font-size: 15px;
+                letter-spacing: 2px;
+    
+            }
+            
+            .about-me{
+                flex-direction: row;
+                margin-top: 40px;
+
+                .personal-details{
+                    width: 65%;
+                }
+    
+                h3{
+                    font-size: 18PX;
+                    margin-bottom: 25PX;
+                    letter-spacing: 1px;
+    
+                   span{
+                       margin-right: 50px;
+                   }
+                }
+
+                .my-interest{
+                    width: 35%;
+                }
+                .my-interest > div{
+                    width: 100%;
+                    grid-gap: 20px;
+                }
+                
+            }
+        }
+
+    }
+
+    h2{
+        font-size: 32px !important;
+        
+    }
+   
+}
+
+
+@media only screen and (min-width: 1100px) {
+    .about{
+        .content{
+            .about-me{
+                .personal-details{
+                    width: 50%;
+                }
+                .my-interest{
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+   
+}

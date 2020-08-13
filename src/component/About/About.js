@@ -1,20 +1,121 @@
 import React from 'react'
 
 import './about.scss'
+
+import {FaGamepad, FaCoffee, FaCarSide, FaMoneyBillAlt, FaLaptop, FaPlane } from 'react-icons/fa';
+
 const About = () => {
+    const personalDetails = [
+        {
+            title : 'Birthdate',
+            detail : '09-06-199'
+        },
+        {
+            title : 'Phone',
+            detail : '+977 9823345038'
+        },
+        {
+            title : 'Email',
+            detail : 'ashim.bhatta000@gmail.com'
+        },
+        {
+            title : 'Website',
+            detail : '-----'
+        },
+        {
+            title : 'Job Status',
+            detail : 'FreeLance'
+        },
+        // {
+        //     title : 'Birthdate',
+        //     detail : '09-06-199'
+        // },
+    ]
+
+    const interests = [
+        {
+            icon : <FaGamepad className='icon-interest' />,
+            name : 'game'
+        },
+        {
+            icon : <FaCoffee className='icon-interest' />,
+            name : 'coffee'
+        },
+        {
+            icon : <FaCarSide className='icon-interest' />,
+            name : 'car'
+        },
+        {
+            icon : <FaMoneyBillAlt className='icon-interest' />,
+            name : 'money'
+        },
+        {
+            icon : <FaLaptop className='icon-interest' />,
+            name : 'laptop'
+        },
+        {
+            icon : <FaPlane className='icon-interest' />,
+            name : 'plane'
+        },
+    ]
     return(
-        <div id='about' className="container">
-            <div className="box box1">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nesciunt vel quam officiis voluptas quod consectetur qui consequuntur molestias est hic, maiores sapiente laborum dolore alias. Ullam aliquam reiciendis assumenda sit ea iste expedita nobis, quisquam voluptates quidem saepe provident nostrum laboriosam non architecto voluptatum et culpa asperiores accusamus. Repellendus, recusandae veniam odit eos vel temporibus vero ipsa libero quod voluptatem modi nisi nemo soluta fugit quibusdam accusantium eum minima hic necessitatibus expedita quaerat, neque quae nam tempore. Tempore quidem ducimus aliquid, recusandae explicabo reiciendis. Architecto molestias officiis error laudantium dignissimos sunt ipsum ratione dolor distinctio? Quisquam itaque sint doloribus sit blanditiis vel nemo porro at nisi ab est, tempore assumenda voluptatem eos doloremque asperiores quas, autem iusto quam cum. Deserunt quis pariatur vel mollitia assumenda? Accusantium nulla quae voluptatem quas maxime consectetur corrupti, molestiae non ipsa aliquam voluptates eius veniam eos odit a aperiam reprehenderit! Harum explicabo exercitationem, nisi incidunt quae at dolorum dolor odio totam temporibus ipsa repellendus modi molestiae esse corrupti accusantium minima reprehenderit similique sed perspiciatis assumenda recusandae necessitatibus cumque. Nulla, excepturi aliquam! Perferendis error voluptates, voluptate officia labore dolorum corporis cumque adipisci! Illo, quidem accusamus expedita unde rem ex recusandae beatae quis deserunt ipsam veniam enim fuga, id dicta? Adipisci facilis libero nobis ab debitis nesciunt ea illum quisquam iure voluptatum ex facere optio suscipit, sint corporis animi, minima nam commodi cum dolore. Cum, porro fugiat, cumque incidunt pariatur est eius laborum, praesentium a ad maxime qui facilis. Officia voluptatum, repudiandae voluptas facere eveniet fugit? Assumenda quibusdam neque unde dolor nihil vitae atque eaque obcaecati nemo, soluta libero aut beatae sapiente! Delectus recusandae magni saepe molestias veniam provident esse eum atque nam? Consequatur maxime possimus dolor rerum consequuntur pariatur laboriosam libero? Tempore corporis illum error doloribus nihil, qui hic similique quam! Quaerat quo ratione iusto eum tenetur? Consectetur magni, accusamus, facere libero doloribus iste quidem esse ducimus suscipit vitae soluta, possimus a eius minus non sapiente? Id, placeat repudiandae. Ducimus beatae minus culpa, amet maxime eos perferendis similique nam omnis veniam, minima aut reiciendis, ab tempora! Illum porro dolorem mollitia facere sit voluptas ipsam quaerat inventore laudantium repellat, facilis distinctio enim saepe dolorum cupiditate, molestiae amet quis sed error deserunt ullam optio nemo eligendi a. Optio earum voluptatem distinctio. Molestiae, cumque facere voluptas eligendi magni optio quidem cum doloremque rem nulla, ullam minus ea blanditiis ratione et pariatur laborum animi exercitationem soluta quam impedit placeat nihil! Labore et dolorum ex consequatur aspernatur fugit vel vitae harum dolore, commodi nam repellat laudantium. Libero totam, officia dolore ipsa porro quo? Ullam hic unde expedita facere illum doloremque, impedit laborum voluptate totam officiis, provident laboriosam alias ad harum ratione aperiam porro optio. Quis ab consequuntur corrupti numquam nobis, explicabo sunt aliquam iusto, odio consequatur dicta quos tenetur, officia ut ea nesciunt ipsum? Accusamus, consectetur? Accusamus, ea. Voluptate enim ducimus, modi velit eveniet nesciunt adipisci voluptatibus laboriosam omnis aut natus vero porro minus dolores ut numquam molestiae inventore, ipsam, saepe suscipit quaerat incidunt voluptates pariatur? Ratione error atque nemo autem dolores, labore iste cumque! Explicabo, quod, distinctio iste nesciunt quo, quos placeat repellendus quasi nihil et voluptate quis soluta maxime voluptates? Eum adipisci placeat cupiditate quia consequatur corrupti labore aliquid, sequi quisquam facilis temporibus excepturi alias iste, dolores provident tempora dolor aspernatur laborum quos exercitationem quasi eos consequuntur, vel aperiam! Aliquid vitae nisi aperiam tempore neque aliquam laborum praesentium similique eius aspernatur, repellat delectus, quis quo obcaecati deserunt mollitia quam modi exercitationem. Unde, expedita blanditiis. At voluptates, nulla, enim natus incidunt quibusdam corporis dicta velit animi perferendis nemo, quas totam dolores iusto. Aliquid eaque eum quam quae asperiores minus reprehenderit molestiae, inventore maxime illo tenetur. Enim nostrum sequi porro quae voluptas placeat inventore laudantium labore quas voluptate dolorum ad aperiam neque veritatis omnis ducimus, earum voluptatibus temporibus, animi similique totam optio iure quos aliquid. Maiores quis nam sit possimus temporibus quasi nisi dolor quidem. Dolores voluptatibus nisi molestiae dicta ab quae sint eius consectetur sit assumenda deleniti cupiditate quia beatae et, iste voluptate? Architecto, animi! Illo quaerat praesentium harum saepe amet illum voluptates aut officia quasi fugit natus totam distinctio aliquam earum dolor neque unde maiores ipsam expedita officiis nemo perspiciatis, excepturi rem? Quos sed assumenda perspiciatis blanditiis exercitationem eveniet, doloribus reprehenderit quidem qui nisi itaque eos nesciunt dolore ea magni, neque libero maxime commodi rerum ut nulla esse quod? Maiores accusantium aspernatur quasi beatae quia distinctio aliquam harum vitae reprehenderit assumenda? Aperiam cupiditate ipsam reiciendis delectus sunt fugiat tempora amet nulla quasi iusto hic explicabo, nisi molestiae dolorem architecto earum cum nam odio ex eum voluptates! Recusandae, quam. Consectetur at fugit expedita adipisci magni delectus possimus veritatis voluptatum asperiores, veniam dignissimos perferendis cum vel sunt repudiandae deserunt. Temporibus voluptatibus eos nihil officia quibusdam accusantium, vero explicabo minima beatae alias iusto accusamus, placeat ut porro ullam quia, deleniti earum! Nobis molestias harum porro, fuga ratione eligendi libero rerum laborum, ea rem dolor quas fugiat nisi, explicabo sunt molestiae atque animi eius commodi incidunt? Provident quia sit iste, veniam in animi architecto aut iusto voluptates odio a adipisci soluta eum molestias tempora mollitia. Dolorem libero, obcaecati assumenda odit maxime, amet sint, sapiente soluta quibusdam autem magni voluptatibus est vero aliquid laboriosam quisquam reiciendis quos sequi! At fugiat reiciendis assumenda. Quae amet ut iusto qui dicta voluptatibus rerum incidunt sit necessitatibus maxime similique magnam earum nam laboriosam error nostrum consequuntur libero, molestiae consequatur doloribus exercitationem, at facilis? Dolor necessitatibus accusamus deleniti dignissimos ex pariatur eveniet, quo id nisi quos dolore labore vitae deserunt accusantium iure dolorem. Animi debitis officia reiciendis facere optio soluta ratione nemo inventore repellat itaque eum nostrum sequi expedita eos hic, nisi, voluptas perferendis ab! Laudantium explicabo saepe ab, aliquam eum id fugiat voluptatem ex reprehenderit hic corrupti odit corporis pariatur est quidem atque omnis aperiam dolor. Ipsam ea voluptatum expedita dicta tempore reiciendis. Quasi ab voluptatum, aspernatur, soluta, hic ratione sed accusantium debitis laudantium magnam delectus ex! Quae, molestias a aliquid excepturi sunt autem impedit unde rem, officiis saepe aliquam reiciendis optio dolore, temporibus soluta eaque obcaecati.
+        <div id='about' className="about">
+            <div className="title">
+                <h1>
+                    About me
+                </h1>
             </div>
-            <div className="box box2"></div>
-            <div className="box box3"></div>
-            <div className="box box4"></div>
-            <div className="box box5"></div>
-            <div className="box box6"></div>
-            <div className="box box7"></div>
-            <div className="box box8"></div>
-            <div className="box box9"></div>
+
+            <div className="content">
+                    <p>
+                        <span>
+                            Hello! I'm Ashim. 
+                        </span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis fuga, voluptatem excepturi corrupti ea dicta deserunt nam quasi quaerat aliquid cumque quos! Vel laborum, est porro quis architecto sequi! Quasi totam sed ab nisi eaque nobis, fugiat dignissimos quae rem enim velit suscipit, in, necessitatibus nostrum numquam tempore excepturi cupiditate?
+                    </p>
+               <div className="about-me">
+
+
+                    <div className="personal-details">
+                        <h2>
+                            Personal Details
+                        </h2>
+                        {
+                            personalDetails.map((pD) => {
+                                return(
+                                    <h3>
+                                        <span>{pD.title}</span> {pD.detail}
+                                    </h3>
+                                )
+                            })
+                        }
+                    </div>
+
+                    <div className="my-interest">
+                        <h2>
+                            My Interest
+                        </h2>
+                        <div>
+                        {
+                            interests.map((mI) => {
+                                return(
+                                    <div className="interest">
+                                        {mI.icon}
+                                        <p>{mI.name}</p>
+                                    </div>
+                                )
+                            })
+                        }
+                        </div>
+                    </div>
+               </div>
+            </div>
+                <a href="cv/Resume.pdf" download>
+                    <button className="btn-cv">
+                                Get CV
+                    </button>
+                </a> 
+
+
         </div>
     )
 }
