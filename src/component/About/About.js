@@ -2,6 +2,9 @@ import React from 'react'
 
 import './about.scss'
 
+// cv
+import cv from '../../cv/Resume.pdf'
+
 import {FaGamepad, FaCoffee, FaCarSide, FaMoneyBillAlt, FaLaptop, FaPlane } from 'react-icons/fa';
 
 const About = () => {
@@ -109,7 +112,7 @@ const About = () => {
                     </div>
                </div>
             </div>
-                <a href="cv/Resume.pdf" download>
+                <a href={cv} download>
                     <button className="btn-cv">
                                 Get CV
                     </button>

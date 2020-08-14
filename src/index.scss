@@ -42,7 +42,7 @@ li{
   &::after{
     content: '';
     position: absolute;
-    bottom: -0px;
+    bottom: -5px;
     left: 25px;
     right: 25px;
     height: 1px;
@@ -54,7 +54,7 @@ li{
   &::before{
     content: '';
     position: absolute;
-    bottom: -8px;
+    bottom: -13px;
     left: 45px;
     right: 45px;
     height: 1px;

@@ -22,6 +22,7 @@ header{
         background-clip: text;
         padding: 5px 15px;
         position: fixed;
+        z-index: 10000;
 
         a{
             font-weight: 700;
@@ -201,7 +202,7 @@ header{
         }
         .content{
             width: 90%;
-            max-width: 400px;
+            max-width: 600px;
             height: 450px;
             top: 50%;
             left: 50%;

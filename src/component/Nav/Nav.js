@@ -7,6 +7,7 @@ const Nav = ( {isNavOpen, toogleNav} ) =>{
     const navMenu = [
         'home',
         'about',
+        'skills',
         'work',
         'contact'
     ]

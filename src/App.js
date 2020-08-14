@@ -4,6 +4,7 @@ import './index.scss'
 import Nav from './component/Nav/Nav';
 import Header from './component/Header/Header';
 import About from './component/About/About';
+import Skills from './component/Skills/Skills';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Nav isNavOpen = {isNavOpen} toogleNav = {toogleNav}/>
       <Header />
      <About />
+     <Skills />
     </div>
   );
 }

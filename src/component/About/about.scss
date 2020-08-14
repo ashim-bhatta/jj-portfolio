@@ -1,5 +1,5 @@
 .about{
-    padding: 60px 15px;
+    padding: 60px 20px;
     text-align: center;
     background: rgba(37, 42, 46, 1);
     color: white;
@@ -100,7 +100,7 @@
         overflow: hidden;
         margin-top: 50px;
         cursor: pointer;
-        z-index: 1000;
+        z-index: 10;
 
         &::after{
             content: '';
@@ -133,7 +133,7 @@
 
 @media only screen and (min-width: 800px) {
     .about{
-        padding: 80px 100px;
+        padding: 80px 125px 80px 100px;
 
 
         .content{
