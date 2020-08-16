@@ -4,35 +4,12 @@ import './header.scss';
 import bg from '../../video/bg.mp4'
 import profile1 from '../../img/profile-1.png'
 
-
-// icon
-import { FiInstagram, FiTwitter, FiGithub, FiLinkedin } from 'react-icons/fi';
+import Social from '../Social/Social';
 
 
 const Header = ( ) => {
  
-    const social = [
-        {
-            icon : FiInstagram,
-            url : 'http://instaram.com/ashim_bhatta',
-            class : 'icon-insta'
-        },
-        {
-            icon : FiTwitter,
-            url : 'http://instaram.com/ashim_bhatta',
-            class : 'icon-twitter'
-        },
-        {
-            icon : FiGithub,
-            url : 'http://instaram.com/ashim_bhatta',
-            class : 'icon-git'
-        },
-        {
-            icon : FiLinkedin,
-            url : 'http://instaram.com/ashim_bhatta',
-            class : 'icon-linkedin'
-        },
-    ]
+    
     return(
         <header id="home">
             <video autoPlay muted loop id="myVideo">
@@ -58,20 +35,7 @@ const Header = ( ) => {
 
                         <a href="#about" ><button className='btn'> About Me</button></a>
                     </div>
-
-                    <div className="social-handel">
-                        {
-                            social.map((ic) => {
-                                return(
-                                    <div className='single-social' key={ic.class}>
-                                        <a href={ic.url} target="_blank">
-                                            <ic.icon className='icon'/>
-                                        </a>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
+                    <Social />
                 </div>
            </div>
         </header>
